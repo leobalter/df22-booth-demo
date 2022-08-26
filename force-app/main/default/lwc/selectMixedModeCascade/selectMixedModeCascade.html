@@ -1,0 +1,16 @@
+<template>
+    <!-- this is not using Native Shadow DOM yet, the components inside are! -->
+    <div class="full">
+        <p>If a parent component uses any, then all components in the subtree operate in native shadow regardless of its shadowSupportMode value. Native shadow mode components can contain native shadow mode children components only.</p>
+    </div>
+
+    <lightning-card title="Any" class="card">
+        <div class="slds-p-horizontal_small">
+            <h3 class="slds-p-horizontal_small">
+                <code>static shadowSupportMode = 'any';</code>
+            </h3>
+            <p class="slds-p-around_medium lgc-bg"><code>any</code> renders the whole component subtree in native shadow DOM where possible. If the browser doesn't support shadow DOM, the subtree renders in synthetic shadow.</p>
+            <c-mixed-mode-any></c-mixed-mode-any>
+        </div>
+    </lightning-card>
+</template>

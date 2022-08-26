@@ -1,0 +1,13 @@
+:host::part(testingpart) {
+    background: greenyellow;
+    display: block;
+}
+
+::slotted(*) {
+    background: greenyellow;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}

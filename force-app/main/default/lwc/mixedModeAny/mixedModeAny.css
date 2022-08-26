@@ -1,0 +1,7 @@
+.card {
+    flex: 1 1 48%;
+    border: 1px solid rgb(68, 68, 68);
+    border-radius: 2px;
+    margin: .5rem;
+    padding: .5rem;
+}

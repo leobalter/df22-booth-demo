@@ -1,0 +1,41 @@
+<template>
+    <div style="min-width: 225px; border-right: 1px solid #e7e7e7;">
+        <lightning-vertical-navigation selected-item={selectedItem} onselect={handleSelect} class="navigation">
+            <lightning-vertical-navigation-section label="Examples">
+                <lightning-vertical-navigation-item label="Light DOM" name="lightdom"></lightning-vertical-navigation-item>
+                <lightning-vertical-navigation-item label="Native Mixed Mode" name="mixedmode"></lightning-vertical-navigation-item>
+                <lightning-vertical-navigation-item label="Native Shadow Subtree Effect" name="mixedmodecascade"></lightning-vertical-navigation-item>
+            </lightning-vertical-navigation-section>
+        </lightning-vertical-navigation>
+    </div>
+
+    <lightning-card class="card select-lightdom dblock">
+        <h3 slot="title">
+            <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+            LightDOM
+        </h3>
+        <div class="slds-p-horizontal_small">
+            <c-select-light-dom></c-select-light-dom>
+        </div>
+    </lightning-card>
+    <lightning-card class="card select-mixedmode">
+        <h3 slot="title">
+            <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+            Mixed Shadow Mode
+        </h3>
+        
+        <div class="slds-p-horizontal_small">
+            <c-select-mixed-mode></c-select-mixed-mode>
+        </div>
+    </lightning-card>
+    <lightning-card class="card select-mixedmodecascade">
+        <h3 slot="title">
+            <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+            Native Shadow Subtree Effect
+        </h3>
+        
+        <div class="slds-p-horizontal_small">
+            <c-select-mixed-mode-cascade></c-select-mixed-mode-cascade>
+        </div>
+    </lightning-card>
+</template>

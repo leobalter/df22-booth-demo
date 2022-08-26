@@ -1,0 +1,28 @@
+<template>
+    <!-- this is not using Native Shadow DOM yet, the components inside are! -->
+    <div class="full">
+        <p>There are styles for <code>::part</code> and <code>::slotted</code> so if you're not seeing diff background colors above then mixed-mode is not enabled on this org</p>
+    </div>
+
+    <lightning-card title="Native" class="card">
+        <h3 slot="title">
+            Native Shadow DOM
+        </h3>
+        <div class="slds-p-horizontal_small">
+            <c-mixed-mode_basic>
+                <p slot="myslot">If green, <code>::slotted(*)</code> works!</p>
+            </c-mixed-mode_basic>
+        </div>
+    </lightning-card>
+
+    <lightning-card title="Synthetic" class="card">
+        <h3 slot="title">
+            Synthetic Shadow DOM
+        </h3>
+        <div class="slds-p-horizontal_small">
+            <c-synthetic-mode_basic>
+                <p slot="myslot">If green, <code>::slotted(*)</code> works!</p>
+            </c-synthetic-mode_basic>
+        </div>
+    </lightning-card>
+</template>

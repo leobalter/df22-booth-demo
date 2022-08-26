@@ -1,0 +1,15 @@
+:host {
+    border: 1px solid #0000f0;
+    padding: 1rem;
+    display: block;
+    margin: 1rem 0;
+}
+
+.animal {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.highlight {
+    font-weight: 700;
+    background-color: aquamarine;
+}

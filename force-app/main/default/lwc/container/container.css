@@ -1,0 +1,29 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+:host {
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem;
+    background-color: #fff;
+}
+
+.card {
+    margin: .5rem;
+    display: none;
+    flex: 1 1 auto;
+}
+
+.dblock {
+    display: block;
+}
+
+h1, h2, h3, h4 {
+    color: rgb(5, 98, 138);
+}
+
+h2 {
+    font-size: 2rem;
+}
+

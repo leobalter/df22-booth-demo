@@ -1,0 +1,14 @@
+<template>
+    <div class="card">
+        <lightning-card>
+            <template if:true={isSynthetic}>
+                <p>This LWC uses <code>static shadowSupportMode = 'any';</code> and is rendering with the Synthetic Shadow DOM</p>
+            </template>
+            <template if:false={isSynthetic}>
+                <p>This LWC uses <code>static shadowSupportMode = 'any';</code> and is rendering with the Native Shadow DOM</p>
+            </template>
+        </lightning-card>
+        <p>{isSynthetic}</p>
+        <c-mixed-mode-is-synthetic></c-mixed-mode-is-synthetic>
+    </div>
+</template>
