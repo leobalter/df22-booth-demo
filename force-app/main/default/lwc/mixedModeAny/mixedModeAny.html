@@ -1,11 +1,15 @@
 <template>
+    <div class="full">
+        <p>If a parent component uses any, then all components in the subtree operate in native shadow regardless of its shadowSupportMode value. Native shadow mode components can contain native shadow mode children components only.</p>
+        <p class="slds-p-around_medium lgc-bg"><code>any</code> renders the whole component subtree in native shadow DOM where possible. If the browser doesn't support shadow DOM, the subtree renders in synthetic shadow.</p>
+    </div>
     <div class="card">
         <lightning-card>
             <template if:true={isSynthetic}>
-                <p>This LWC uses <code>static shadowSupportMode = 'any';</code> and is rendering with the Synthetic Shadow DOM</p>
+                <p>This outer LWC uses <code>static shadowSupportMode = 'any';</code> and is rendering with the Synthetic Shadow DOM</p>
             </template>
             <template if:false={isSynthetic}>
-                <p>This LWC uses <code>static shadowSupportMode = 'any';</code> and is rendering with the Native Shadow DOM</p>
+                <p>This outer LWC uses <code>static shadowSupportMode = 'any';</code> and is rendering with the Native Shadow DOM</p>
             </template>
         </lightning-card>
         <p>{isSynthetic}</p>
