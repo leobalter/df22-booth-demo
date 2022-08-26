@@ -3,11 +3,12 @@
 
     <p>The &lt;c-light-dom&gt; component is rendered using Light DOM and its elements are in the same tree of this parent element.</p>
 
-    <div>
-        The quick brown <span class="animal">fox</span> jumps over the lazy <span class="animal">dog</span>.
+    <div class="phrase">
+        <p><code>&lt;p&gt;</code>The quick brown <code>&lt;span class="animal"&gt;</code><span class="animal">fox</span><code>&lt;/span&gt;</code> jumps over the lazy <code>&lt;span class="animal"&gt;</code><span class="animal">dog</span><code>&lt;/span&gt;</code>.<code>&lt;/p&gt;</code></p>
     </div>
 
-    <lightning-button label="Click Me!" onclick={handleClick}></lightning-button>
+    <lightning-button class="button" label="Click Me!" onclick={handleClick}></lightning-button>
+    <lightning-button class="button" label="Reveal HTML" onclick={reveal}></lightning-button>
     
     <c-light-dom></c-light-dom>
 </template>

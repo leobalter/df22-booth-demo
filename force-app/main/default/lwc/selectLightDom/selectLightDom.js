@@ -6,4 +6,8 @@ export default class SelectLightDom extends LightningElement {
             elem.classList.toggle('highlight');
         });
     }
+
+    reveal() {
+        this.template.querySelectorAll('.phrase').forEach(elem => elem.classList.toggle('revealed'));
+    }
 }

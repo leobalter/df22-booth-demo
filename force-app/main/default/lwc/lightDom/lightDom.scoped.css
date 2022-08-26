@@ -13,3 +13,21 @@
     font-weight: 700;
     background-color: aquamarine;
 }
+
+.phrase {
+    padding: 0.5rem;
+    border: 1px dashed #d0d0d0;
+    margin: 1rem 0;
+}
+
+.revealed {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.phrase code {
+    display: none;
+}
+
+.phrase.revealed code {
+    display: inline-block;
+}
