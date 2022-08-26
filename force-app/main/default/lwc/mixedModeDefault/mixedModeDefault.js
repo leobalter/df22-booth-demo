@@ -1,6 +1,6 @@
 import { LightningElement, api } from 'lwc';
 
-export default class MixedModeIsSynthetic extends LightningElement {
+export default class MixedModeDefault extends LightningElement {
     @api isSynthetic = 'unknown';
     
     firstRender = true;

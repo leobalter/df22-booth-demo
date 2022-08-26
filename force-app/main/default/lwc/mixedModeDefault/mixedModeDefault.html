@@ -1,0 +1,11 @@
+<template>
+    <div class="card">
+        <lightning-card>
+            <pre>&lt;c-mixed-mode-default&gt;</pre>
+            <p>The inner LWC</p>
+            <p>Does not set any value for <code>static shadowSupportMode</code></p>
+            <p if:true={isSynthetic}>Rendered using Synthetic Shadow DOM</p>
+            <p if:false={isSynthetic}>Rendered using Native Shadow DOM</p>
+        </lightning-card>
+    </div>
+</template>
