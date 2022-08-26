@@ -1,5 +1,5 @@
 import { LightningElement } from 'lwc';
 
-export default class SyntheticMode_basic extends LightningElement {
+export default class SyntheticMode extends LightningElement {
     // static shadowSupportMode = 'any';
 }

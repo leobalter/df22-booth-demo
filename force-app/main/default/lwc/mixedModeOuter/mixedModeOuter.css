@@ -16,11 +16,3 @@
     border-radius: 2px;
     padding: 0 .5rem;
 }
-
-.lgc-bg {
-    background-color: rgb(242, 242, 242);
-}
-
-.lgc-bg code {
-    background-color: #fff;
-}
